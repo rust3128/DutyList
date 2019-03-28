@@ -6,7 +6,7 @@
 #include <QSettings>
 #include <QSqlQuery>
 
-#define SETTINGS_FILE_NAME  "DutySchedule.ini"
+#define SETTINGS_FILE_NAME  "DutyList.ini"
 
 
 DataBase::DataBase(QObject *parent) : QObject(parent)

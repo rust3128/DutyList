@@ -1,16 +1,13 @@
 #include "connectiondialog.h"
 #include "ui_connectiondialog.h"
 
-#define SETTINGS_FILE_NAME  "DutySchedule.ini"
+#define SETTINGS_FILE_NAME  "DutyList.ini"
 
 ConnectionDialog::ConnectionDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ConnectionDialog)
 {
     ui->setupUi(this);
-
-
-
     readConnData();
 }
 

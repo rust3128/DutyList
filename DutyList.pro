@@ -26,15 +26,28 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    LoggingCategories/loggingcategories.cpp \
+    DataBase/database.cpp \
+    ConnectionDialog/connectiondialog.cpp \
+    UsersDialog/usersdialog.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    LoggingCategories/loggingcategories.h \
+    DataBase/database.h \
+    ConnectionDialog/connectiondialog.h \
+    UsersDialog/usersdialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    ConnectionDialog/connectiondialog.ui \
+    UsersDialog/usersdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc

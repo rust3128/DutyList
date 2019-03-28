@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>600</height>
+    <width>692</width>
+    <height>586</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>692</width>
      <height>23</height>
     </rect>
    </property>
@@ -27,7 +27,7 @@
     <property name="title">
      <string>Настройка</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="actionUsers"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -38,15 +38,31 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionUsers"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action">
+  <action name="actionUsers">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Icons/users.png</normaloff>:/Icons/users.png</iconset>
+   </property>
    <property name="text">
     <string>Сотрудники</string>
+   </property>
+   <property name="toolTip">
+    <string>Список Сотрудников</string>
+   </property>
+   <property name="statusTip">
+    <string>Редактирование справочника сотрудников</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
